@@ -1,0 +1,157 @@
+//设置页面基准值
+@rootsize: 3.75;
+// 主体区域
+.view{
+    width: 100%;
+
+    // 顶部固定定位区域
+    .top_fixed{
+        position:fixed;
+        left: 0;
+        top:0;
+        height: (84vmin / @rootsize);
+        width: 100%;
+        background-color: #fff;
+        z-index: 1;
+    
+
+
+
+    // logo区域
+    .logo{
+        height: (44vmin / @rootsize);
+        width: 100%;
+        padding: 0 (12vmin/@rootsize) 0 (18vmin/@rootsize);
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .Navbar_logo{
+            color:#fb7299;
+            font-size: (29vmin / @rootsize);
+        }
+        // 右侧logo
+        .right_logo{
+            width: (160vmin / @rootsize);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ic_search_tab{
+                font-size: (22vmin / @rootsize);
+                color: #ccc;
+                margin-right: (22vmin / @rootsize);
+                // margin-top:(2vmin / @rootsize);
+                display:block;
+            }
+            .login{
+                img{
+                    width: (24vmin/@rootsize);
+                    margin-right: (12vmin/@rootsize);
+                }
+            }
+            .download{
+                img{
+                    width: (72vmin/@rootsize);
+                    margin-left: (8vmin/@rootsize);
+                }
+            }
+        }
+
+    }
+
+
+
+    //主体导航
+    .main_nav{
+        width: 100%;
+        height: (40vmin/@rootsize);
+        display: block;
+        display: flex;
+        
+        .left_nav{
+            width:(335vmin/@rootsize) ;
+            height: (40vmin/@rootsize);
+            overflow: auto;
+            line-height: (40vmin/@rootsize);
+            ul{
+                margin: 0;
+                list-style: none;
+                text-decoration: none;
+                display: flex;
+                width: (750vmin/@rootsize);
+                a{
+                    list-style: none;
+                    text-decoration: none;
+                    padding: 0 (16vmin/@rootsize);
+                    color: #000;
+                }
+                }
+            }
+            .rightDown{
+                width: (40vmin/@rootsize);
+                text-align: center;
+                line-height: (40vmin/@rootsize);
+            }
+    }
+    }
+    // 中间部分
+    .middle_content{
+        width: 100%;
+        padding:0 (5vmin/@rootsize);
+        margin-top:(84vmin/@rootsize);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item{
+            width: 49%;
+            height: (151vmin / @rootsize);
+            margin: (8vmin / @rootsize) 0;
+            .topimg{
+                width: 100%;
+                position: relative;
+                color: #fff;
+                font-size: (12vmin/@rootsize);
+                    img{
+                        width: 100%;
+                    }
+                    // 左侧信息盒子
+                    .leftmsg{
+                        position: absolute;
+                        bottom: (5vmin/@rootsize);
+                        left:(5vmin/@rootsize) ;
+                    }
+                    // 右侧信息盒子
+                    .rightmsg{
+                        position: absolute;
+                        bottom: (5vmin/@rootsize);
+                        right: (5vmin/@rootsize);
+                    }
+            }
+            p{
+                font-size: (12vmin/@rootsize);
+                margin-top: (6vmin/@rootsize);
+            }
+        }
+    }
+    //底部固定盒子
+    .footer_fixed{
+        position: fixed;
+        bottom: (30vmin/@rootsize);
+        left: 0;
+        width: 100%;
+        padding: 0 (12vmin/@rootsize);
+        box-sizing:border-box;
+        .openapp{
+            width: 100%;
+            height: (38vmin/@rootsize);
+            background-color: #fb7299;
+            border-radius: (19vmin/@rootsize);
+            text-align: center;
+            line-height: (38vmin/@rootsize);
+            color: #fff;
+        }
+    }
+}
